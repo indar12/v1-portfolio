@@ -1,0 +1,22 @@
+/* Container for the glowing effect and content */
+.glowing-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Glowing effect element styled as 'fixed' */
+.glowing-background {
+  position: fixed; /* Fixed relative to the viewport */
+  inset: 0; /* Cover the entire screen */
+  pointer-events: none; /* Allows interactions with underlying content */
+  z-index: 30; /* Ensure it's on top of the content */
+  transition: background 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Content inside the container */
+.content {
+  z-index: 40; /* Ensure content is above the glowing effect */
+  text-align: center;
+  padding: 20px;
+}

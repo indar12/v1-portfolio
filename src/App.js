@@ -1,11 +1,9 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import GlowingEffect from "./layouts/glowingEffect/GlowingEffect";
 
-function App() {
-  return (
-    <div className="App">
-      Hello world
-    </div>
-  );
-}
+const App = () => {
+  return <GlowingEffect />;
+};
 
 export default App;
